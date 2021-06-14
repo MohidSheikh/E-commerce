@@ -205,7 +205,7 @@ header .btn .fa{
 }
 
 .search-box-container {
-  display: block;
+  display: none;
   position: absolute;
   top: 62px;
   right: 30px;
