@@ -23,14 +23,14 @@ window.addEventListener("scroll", function () {
 //   });
 // });
 
-$(document).ready(function() {
-     
-  $(".fa-search").click(function() {
-     $(".search-box").toggle();
-     $("input[type='text']").focus();
-   });
-
+$(document).ready(function(){
+    $(".srch-btn").click(function(){
+        $(".search-box-container").slideToggle("3000");
+    });
 });
+
+
+
 
 
 var menu = document.querySelector('.navbar');
