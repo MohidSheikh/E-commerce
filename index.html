@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="assets/styles/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 </head>
 
@@ -81,29 +83,35 @@
       <label for="search-box" class="fas fa-search srch-btn"></label>
 
     </div>
-    <form action="" class="search-box-container">
+    <!-- <form action="" class="search-box-container">
       <input type="search" id="search-box" placeholder="search here...">
       <input type="button" value="Go">
+  </form> -->
+
+  <form action="get" class="search-box-container" id="search-box-container">
+    <input type="text" id="search" placeholder="What Are You Looking For?">
+    <input type="button" value="GO" id="go-btn" class="go-btn">
   </form>
+
   </header>
 
   <section class="handbag" id="handbag">
     <div class="container">
       <div class="handbag-content">
 
-        <img src="assets/images/bags/11.png" alt="">
+        <img src="assets/images/bags/11.png" alt="" data-aos="fade-up" data-aos-delay="700">
 
-        <div class="heading">
+        <div class="heading" data-aos="fade-right">
           <div class="sub-heading">
           <h2>Ouverture</h2>
         </div>
 
-        <div class="main-heading">
+        <div class="main-heading" data-aos="fade-right">
           <h2>Zara's Horsebit 1955 Leather Bag</h2>
         </div>
 
         </div>
-        <div class="shop">
+        <div class="shop" data-aos="fade-right">
           <a href="#">Shop handbags</a>
         </div>
       </div>
@@ -156,5 +164,64 @@
     </div>
   </section>
 
+
+  <section class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-box">
+          <a href="#" class="logo">Zara's</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eveniet.</p>
+          <div class="share">
+            <a href="#" class="btn fab fa-facebook-f"></a>
+            <a href="#" class="btn fab fa-twitter"></a>
+            <a href="#" class="btn fab fa-instagram"></a>
+            <a href="#" class="btn fab fa-linkedin"></a>
+          </div>
+        </div>
+        
+        <div class="footer-box">
+          <div class="footer-heading">
+            <h2>Location</h2>
+          </div>
+          <div class="footer-links">
+            <a href="#">pakistan</a>
+            <a href="#">USA</a>
+            <a href="#">france</a>
+            <a href="#">japan</a>
+            <a href="#">russia</a>
+        </div>
+        </div>
+
+        <div class="footer-box">
+          <div class="footer-heading">
+            <h2>Quick-links</h2>
+          </div>
+          <div class="footer-links">
+            <a href="#">home</a>
+            <a href="#">Mens</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">russia</a>
+        </div>
+        </div>
+
+        <div class="footer-box">
+          <div class="footer-heading">
+            <h2>Download Apps</h2>
+          </div>
+          <div class="footer-links">
+            <a href="#">google play</a>
+            <a href="#">window xp</a>
+            <a href="#">app store</a>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 <script src="assets/scripts/index.js"></script>
