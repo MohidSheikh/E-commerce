@@ -267,6 +267,47 @@ header .btn .fa{
   font-weight: 300;
 }
 
+/* Boxes */
+
+.main-boxes {
+  width: 100%;
+  height: 200vh;
+  background-color: blue;
+  padding: 0 30px;
+}
+
+.box-content {
+  border: 1px solid springgreen;
+  /* display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(50%,1fr));
+  grid-gap: 0.25% 0px; */    padding: 0;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(50%,1fr));
+    grid-gap: 20px 0px;
+}
+
+.box-content .box {
+  width: 90 %;
+  height: 60vh;
+  background-color: #ccc;   
+  /* display: grid;
+  position: relative;    
+  grid-template-rows: auto 1fr; */    display: grid;
+    position: relative;
+    grid-template-rows: auto 100fr;
+    border-radius: 15px;
+}
+.box-content .sp {
+  width: 90%;
+  height: 120vh;
+  background-color: #ccc;   
+  /* display: grid;
+  position: relative;    
+  grid-template-rows: auto 1fr; */    display: grid;
+    position: relative;
+    grid-template-rows: auto 100fr;
+    border-radius: 15px;
+}
 
 
 @media screen and (max-width: 800px) {
@@ -360,6 +401,10 @@ header .navbar.active {
   }
   header .icons .fas, header .icons .fa {
     font-size: 20px;
+  }
+
+  .box-content {
+    display: block;
   }
 
 }
