@@ -209,48 +209,36 @@ header .btn .fa{
   cursor: pointer;
 }
 
+/* Search box */
+
 .search-box-container {
-  text-align: initial;
   display: none;
   position: absolute;
-  top: 80px;
-  right: 0px;
-  padding: 0 30px;
+  top: 60px;
+  right: 0;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  text-align: right;
 }
 
-#search-box-container {
-  visibility: none;
+.search-box-container #search {
+  width: 90%;
+  padding: 10px 8px;
+}
+.search-box-container #go-btn {
+  padding: 11.5px 0;
+  width: 7%;
+  position: relative;
+  left: -5px;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #a9a9a9;
 }
 
-.go-btn:hover {
-  background: #222;
+.search-box-container #go-btn:hover {
+  background-color: #000;
   color: #fff;
 }
 
-input[type=text]::placeholder {
-  color: #000;
-}
-
-input[type=text] {
-  width: 80vh;
-  padding: 15px 17px;
-  background: transparent;
-  border-right: none;
-  border: 2px solid #222;
-  outline: none;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-input[type=button] {
-  padding: 15px 50px;
-  background: transparent;
-  font-weight: bolder;
-  font-size: 18px;
-}
 
 /* first container */
 .first-container {
@@ -480,15 +468,6 @@ header .navbar.active {
   right: 0;
 }
 
-input[type=text] {
-  width: 100%;
-}
-
-.go-btn {
-  padding: 15px 0;
-  width: 20%;
-}
-
 /* first-container */
 
 .first-container .first-container-content {
@@ -560,11 +539,6 @@ input[type=text] {
 
 .shop a {
   font-size: 13px;
-}
-
-input[type=button] {
-  width: auto;
-  padding: 15px 5%;
 }
 
 }

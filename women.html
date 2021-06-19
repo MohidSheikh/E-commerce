@@ -1,79 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Women</title>
-    <link rel="stylesheet" href="assets/styles/women.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women</title>
+  <link rel="stylesheet" href="assets/styles/women.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
-    
 
-    <header>
-        <a href="#" class="logo">Zara's</a>
-        <nav class="navbar">
-          
-          <div class="btn">
-            <i class="fa fa-times close-btn"></i>
-          </div>
-          <ul class="navbar-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Men</a>
-    
-              <ul class="drop-down">
-                <li><a href="#">Test</a></li>
-                <li><a href="#">Test</a></li>
-                <li><a href="#">Test</a></li>
-                <li><a href="#">Test</a></li>
-              </ul>
-            </li>
-    
-            <li><a href="#">Kids</a>
-              <ul class="drop-down">
-                <li><a href="#">Test</a></li>
-                <li><a href="#">Test</a></li>
-                <li><a href="#">Test</a></li>
-                <li><a href="#">Test</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Women</a>
-              <ul class="drop-down">
-                <li><a href="#">Test</a></li>
-                <li><a href="#">Test</a></li>
-                <li><a href="#">Test</a></li>
-                <li><a href="#">Test</a></li>
-              </ul>
-            </li>
+  <section class="first-container" id="first-container">
+    <div class="container">
+      <div class="first-container-content">
+        <div class="sub-heading">
+          <h2>Ouverture</h2>
+        </div>
+
+        <div class="heading">
+          <h2>Women</h2>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <header>
+    <a href="#" class="logo">Zara's</a>
+    <nav class="navbar">
+      
+      <div class="btn">
+        <i class="fa fa-times close-btn"></i>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Men</a>
+
+          <ul class="drop-down">
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
           </ul>
-        </nav>
-    
-        <div class="icons">
-          <div class="btn">
-            <i class="fa fa-bars menu-btn"></i>
-          </div>
-          <a href="#" class="fas fa-shopping-cart"></a>
-          <a href="#" class="fas fa-user-circle"></a>
-          <label for="search-box" class="fas fa-search srch-btn"></label>
-    
-        </div>
-        <form action="" class="search-box-container">
-          <input type="search" id="search-box" placeholder="search here...">
-          <input type="button" value="Go">
-      </form>
-      </header>
-    
-    <section class="first-container" id="first-container">
-        <div class="container">
-            <div class="first-container-content">          
-                  <div class="heading">
-                    <h2>women's</h2>
-                  </div>
-            </div>
-        </div>
-    </section>
+        </li>
 
+        <li><a href="#">Kids</a>
+          <ul class="drop-down">
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Women</a>
+          <ul class="drop-down">
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="icons">
+      <div class="btn">
+        <i class="fa fa-bars menu-btn"></i>
+      </div>
+      <a href="#" class="fas fa-shopping-cart"></a>
+      <a href="#" class="fas fa-user-circle"></a>
+      <label for="search-box" class="fas fa-search srch-btn"></label>
+
+    </div>
+    <!-- <form action="" class="search-box-container">
+      <input type="search" id="search-box" placeholder="search here...">
+      <input type="button" value="Go">
+  </form> -->
+
+  <form action="get" class="search-box-container" id="search-box-container">
+    <input type="text" id="search" placeholder="What Are You Looking For?">
+    <input type="button" value="GO" id="go-btn" class="go-btn">
+  </form>
+
+  </header>
+
+  
 </body>
+<script src="assets/scripts/index.js"></script>
 </html>
