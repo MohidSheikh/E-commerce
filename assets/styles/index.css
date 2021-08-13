@@ -608,3 +608,11 @@ header .navbar.active {
 }
 
 }
+
+@media only screen and (max-width: 350px) {
+  
+.first-container {
+  background-position-x: 70%;
+}
+}
+
