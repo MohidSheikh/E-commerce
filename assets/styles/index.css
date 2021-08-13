@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-
+:root {
+  --black: #333;
+  --white: #fff;
+  --container: #e7e7e7;
+}
 
 
 
@@ -18,6 +22,10 @@ body, * {
 .handbag, .handbag-content, .rtwear, .rtwear-content, .shoes, .shoes-content {
   display: flex;
   flex-wrap: wrap;
+}
+
+.logo {
+  color: var(--black);
 }
 
 .container {
@@ -41,14 +49,14 @@ section {
 }
 
 .shop a:hover {
-  background-color: #000;
+  background-color: var(--black);
   font-weight: 900;
   transition: .5s all ease;
 }
 
 .shop a {
   background-color: #555;
-  color: #fff;
+  color: var(--white);
   font-weight: 500;
   padding: 8px 12px;
   margin: 20px;
@@ -71,17 +79,11 @@ section {
   font-size: 20px;
 }
 
-
 .logo{
-  color:#000;
+  color: var(--black);
   font-weight: normal;
   font-size: 50px;
   line-height: 80px;
-}
-
-.logo i{
-  padding-right: .5rem;
-  color:var(--green);
 }
 
 header{
@@ -125,7 +127,7 @@ header ul li {
 header ul li ul {
   position: absolute;
   left: 0;
-  background: #fff;
+  background: var(--white);
   display: none;
   transition: 0.5s all ease;
 }
@@ -137,27 +139,27 @@ header ul li:hover ul {
 
 header ul li ul li {
   display: block;
-  width: 200px;
+  width: 150px;
   transition: 0.5s all ease;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--black);
 }
 
 header ul li ul li a:hover {
-  color: #fff;
-  background-color: #000;
+  color: var(--white);
+  background-color: var(--black);
   font-weight: bolder;
   transition: 0.5s all ease;
-  border-bottom: 1px solid #fff;
 }
 
 header ul li ul li a {
-  line-height: 60px;
+  line-height: 45px;
   transition: 0.5s all ease;
+  font-size: 18px;
 }
 
 header .drop-down li:hover .navbar-links li {
-  color: #fff;
-  background-color: #000;
+  color: var(--white);
+  background-color: var(--black);
   font-weight: bolder;
   transition: 0.5s all ease;
 }
@@ -179,7 +181,7 @@ header .icons .fas, header .icons .fa{
 header ul li a {
   line-height: 80px;
   padding: 0 20px;
-  color: #444;
+  color: var(--black);
   text-decoration: none;
   display: block;
   font-size: 20px;
@@ -188,14 +190,10 @@ header ul li a {
 }
 
 header ul li a:hover {
-    background-color: rgb(51, 46, 46);
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
     font-weight: bolder;
     transition: 0.5s all ease;
-}
-
-header .icons .fas:hover{
-  color:var(--green);
 }
 
 header .navbar .btn .fa {
@@ -203,8 +201,8 @@ header .navbar .btn .fa {
 } 
 
 header .btn .fa{
-  color: #333;
-  font-size: 25px;
+  color: var(--black);
+  font-size: 23px;
   display: none;
   cursor: pointer;
 }
@@ -225,57 +223,59 @@ header .btn .fa{
   padding: 10px 8px;
 }
 .search-box-container #go-btn {
-  padding: 11.5px 0;
+  padding: 10px 0;
   width: 7%;
   position: relative;
   left: -5px;
-  background-color: #fff;
+  background-color: var(--white);
   outline: none;
   border: 1px solid #a9a9a9;
 }
 
 .search-box-container #go-btn:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 
 /* first container */
-.first-container {
-  background: url("../images/woman-bg.png") no-repeat center;
-  top: 0;
-  width: 100%;
-  height: 80vh;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.first-container .first-container-content {
-  text-align: center;
-  position: relative;
-  top: 250px;
-}
 
 .first-container-content .heading h2{
   font-size: 70px;
-  color: #fff;
+  color: var(--white);
   font-weight: 300;
 }
 
 .first-container-content .sub-heading h2{
   font-size: 30px;
-  color: #fff;
+  color: var(--white);
   font-weight: 300;
+}
+
+.first-container {
+  background: url("../images/pic\ 01.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background-position-x: 80%;
+  
+}
+
+.first-container-content {
+  text-align: center;
 }
 
 .handbag {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   padding: 0 10px;
 }
 
 .handbag .container {
-  background-color: #e7e7e7;
+  background-color: var(--container);
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -325,7 +325,7 @@ header .btn .fa{
 
 .rtwear2 .container {
   width: 100%;
-  background-color: #e7e7e7;
+  background-color: var(--container);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -350,7 +350,7 @@ header .btn .fa{
 }
 
 .shoes .container {
-  background-color: #e7e7e7;
+  background-color: var(--container);
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -379,22 +379,26 @@ header .btn .fa{
   font-size: 20px;
 }
 
+/* Footer */
 .footer {
-  background: #000;
+  background: var(--black);
   margin-bottom: 0;
 }
 
+.footer .logo:hover {
+  font-weight: initial;
+}
+
 .footer-content {
-  flex-wrap: wrap;
-  color: #fff;
   display: flex;
-  padding: 50px 0;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px 0 30px 0;
 }
 
 .footer-content .footer-box {
-  border: 1px solid springgreen;
-  width: 200px;
+  width: 350px;
+  margin: 30px 20px;
+  color: var(--white);
 }
 
 .footer-box p {
@@ -406,13 +410,31 @@ header .btn .fa{
 }
 
 .footer-content .share a {
-  padding: 10px;
+  margin: 20px 0;
+  padding: 13px;
   font-size: 20px;
-  line-height: 100px;
+  color: inherit;
+  transition: 0.5s;
+}
+
+.footer-content .share a:hover:nth-child(1) {
+  color: #3b5998;
+}
+
+.footer-content .share a:hover:nth-child(2) {
+  color: #00acee;
+}
+
+.footer-content .share a:hover:nth-child(3) {
+  color: #ef426f;
+}
+
+.footer-content .share a:hover:nth-child(4) {
+  color: #fffc00;
 }
 
 .footer-content .logo {
-  color: #fff;
+  color: #000;
 }
 
 .footer-content .footer-box .footer-links {
@@ -422,8 +444,14 @@ header .btn .fa{
 
 .footer-content .footer-box a{
   display: block;
+  color: inherit;
 }
 
+.footer-content a:hover {
+  font-weight: 900;
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 800px) {
   header .btn .fa{
@@ -470,11 +498,6 @@ header .navbar.active {
 
 /* first-container */
 
-.first-container .first-container-content {
-  text-align: center;
-  position: relative;
-  top: 200px;
-}
 
 .first-container-content .heading h2{
   font-size: 50px;
@@ -508,6 +531,7 @@ header .navbar.active {
 .shop a {
   font-size: 14px;
 }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -577,6 +601,10 @@ header .navbar.active {
 
 .shop a {
   font-size: 13px;
+}
+
+.first-container {
+  background-position-x: 80%;
 }
 
 }

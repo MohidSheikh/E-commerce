@@ -2,8 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 
+:root {
+  --black: #333;
+  --white: #fff;
+  --container: #e7e7e7;
+}
 
-
+a:visited {
+  background-color: initial;
+  color: initial;
+}
 
 body, * {
   margin: 0;
@@ -41,14 +49,14 @@ section {
 }
 
 .shop a:hover {
-  background-color: #000;
+  background-color: var(--black);
   font-weight: 900;
   transition: .5s all ease;
 }
 
 .shop a {
   background-color: #555;
-  color: #fff;
+  color: var(--white);
   font-weight: 500;
   padding: 8px 12px;
   margin: 20px;
@@ -73,15 +81,10 @@ section {
 
 
 .logo{
-  color:#000;
+  color: var(--black);
   font-weight: normal;
   font-size: 50px;
   line-height: 80px;
-}
-
-.logo i{
-  padding-right: .5rem;
-  color:var(--green);
 }
 
 header{
@@ -106,7 +109,7 @@ header.sticky{
   position: fixed;
   top:0; left: 0; right:0;
   background: rgb(255 255 255 / 58%);
-  box-shadow: 0px 0px 3px #0000004d;
+  box-shadow: 0px 0px 3px var(--black)0004d;
 }
 
 
@@ -125,7 +128,7 @@ header ul li {
 header ul li ul {
   position: absolute;
   left: 0;
-  background: #fff;
+  background: var(--white);
   display: none;
   transition: 0.5s all ease;
 }
@@ -137,27 +140,27 @@ header ul li:hover ul {
 
 header ul li ul li {
   display: block;
-  width: 200px;
+  width: 150px;
   transition: 0.5s all ease;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--black);
 }
 
 header ul li ul li a:hover {
-  color: #fff;
-  background-color: #000;
+  color: var(--white);
+  background-color: var(--black);
   font-weight: bolder;
   transition: 0.5s all ease;
-  border-bottom: 1px solid #fff;
 }
 
 header ul li ul li a {
-  line-height: 60px;
+  line-height: 45px;
   transition: 0.5s all ease;
+  font-size: 18px;
 }
 
 header .drop-down li:hover .navbar-links li {
-  color: #fff;
-  background-color: #000;
+  color: var(--white);
+  background-color: var(--black);
   font-weight: bolder;
   transition: 0.5s all ease;
 }
@@ -179,7 +182,7 @@ header .icons .fas, header .icons .fa{
 header ul li a {
   line-height: 80px;
   padding: 0 20px;
-  color: #444;
+  color: var(--black);
   text-decoration: none;
   display: block;
   font-size: 20px;
@@ -188,14 +191,10 @@ header ul li a {
 }
 
 header ul li a:hover {
-    background-color: rgb(51, 46, 46);
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
     font-weight: bolder;
     transition: 0.5s all ease;
-}
-
-header .icons .fas:hover{
-  color:var(--green);
 }
 
 header .navbar .btn .fa {
@@ -203,8 +202,8 @@ header .navbar .btn .fa {
 } 
 
 header .btn .fa{
-  color: #333;
-  font-size: 25px;
+  color: var(--black);
+  font-size: 23px;
   display: none;
   cursor: pointer;
 }
@@ -229,14 +228,14 @@ header .btn .fa{
   width: 7%;
   position: relative;
   left: -5px;
-  background-color: #fff;
+  background-color: var(--white);
   outline: none;
   border: 1px solid #a9a9a9;
 }
 
 .search-box-container #go-btn:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /* first container */
@@ -257,58 +256,141 @@ header .btn .fa{
 
 .first-container-content .heading h2{
   font-size: 70px;
-  color: #fff;
+  color: var(--white);
   font-weight: 300;
 }
 
 .first-container-content .sub-heading h2{
   font-size: 30px;
-  color: #fff;
+  color: var(--white);
   font-weight: 300;
 }
 
 /* Boxes */
-
-.main-boxes {
+.boxes {
   width: 100%;
-  height: 200vh;
-  background-color: blue;
-  padding: 0 30px;
+  height: 300vh;
 }
 
-.box-content {
-  border: 1px solid springgreen;
-  /* display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(50%,1fr));
-  grid-gap: 0.25% 0px; */    padding: 0;
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(50%,1fr));
-    grid-gap: 20px 0px;
+.boxes .box-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
-.box-content .box {
-  width: 90 %;
-  height: 60vh;
-  background-color: #ccc;   
-  /* display: grid;
-  position: relative;    
-  grid-template-rows: auto 1fr; */    display: grid;
-    position: relative;
-    grid-template-rows: auto 100fr;
-    border-radius: 15px;
-}
-.box-content .sp {
-  width: 90%;
-  height: 120vh;
-  background-color: #ccc;   
-  /* display: grid;
-  position: relative;    
-  grid-template-rows: auto 1fr; */    display: grid;
-    position: relative;
-    grid-template-rows: auto 100fr;
-    border-radius: 15px;
+.box {
+  width: 50%;
+  background-color: var(--container);
+  height: 100vh;
+  border: 1px solid var(--white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
+.box:hover {
+  background-color: #f9f9f9;
+}
+
+.box .box-main {
+  display: block;
+}
+
+.box-content .box img {
+  width: 45%;
+}
+
+.box-content .box .details {
+  padding: 30px 0 0 0;
+}
+
+.box .details h2 {
+  font-size: 27px;
+  font-weight: lighter;
+}
+.box .details a {
+  color: inherit;
+}
+.box .details a:hover {
+  color: #ccc;
+  font-weight: 500;
+}
+
+
+/* Footer */
+.footer {
+  background: var(--black);
+  margin-bottom: 0;
+}
+
+.footer .logo:hover {
+  font-weight: initial;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 30px 0;
+}
+
+.footer-content .footer-box {
+  width: 350px;
+  margin: 30px 20px;
+  color: var(--white);
+}
+
+.footer-box p {
+  margin: 30px 0 0 0;
+}
+
+.footer-content .share {
+  display: flex;
+}
+
+.footer-content .share a {
+  margin: 20px 0;
+  padding: 13px;
+  font-size: 20px;
+  color: inherit;
+  transition: 0.5s;
+}
+
+.footer-content .share a:hover:nth-child(1) {
+  color: #3b5998;
+}
+
+.footer-content .share a:hover:nth-child(2) {
+  color: #00acee;
+}
+
+.footer-content .share a:hover:nth-child(3) {
+  color: #ef426f;
+}
+
+.footer-content .share a:hover:nth-child(4) {
+  color: #fffc00;
+}
+
+.footer-content .logo {
+  color: #000;
+}
+
+.footer-content .footer-box .footer-links {
+  line-height: 30px;
+  margin: 40px 0 0 0;
+}
+
+.footer-content .footer-box a{
+  display: block;
+  color: inherit;
+}
+
+.footer-content a:hover {
+  font-weight: 900;
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 800px) {
   header .btn .fa{
@@ -393,6 +475,7 @@ header .navbar.active {
 .shop a {
   font-size: 14px;
 }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -403,9 +486,14 @@ header .navbar.active {
     font-size: 20px;
   }
 
-  .box-content {
+  .boxes .box-content {
     display: block;
   }
+
+  .boxes .box {
+    width: 100%;
+  }
+
 
 }
 
