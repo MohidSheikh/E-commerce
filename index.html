@@ -1,52 +1,80 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Zara's</title>
-  <link rel="stylesheet" href="assets/styles/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles/index.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
 </head>
 
 <body>
+  <!-- popup -->
+  <div id="popup">
+
+    <div class="window">
+      <div class="top">
+        <div class="left-pop">
+          <img src="assets/images/logo.svg" alt="">
+        </div>
+        <div class="right-pop">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore asperiores voluptate mollitia. Suscipit, aliquam dignissimos.</p>
+        </div>
+      </div>      
+
+      <div class="bottom">
+        <input type="button" value="Agree" onclick="PopUp()">
+        <input type="button" value="Close" onclick="PopUp()">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- header -->
   <header>
-    <a href="#" class="logo">Zara's</a>
+    <a href="#" class="logo"><img src="assets/images/logo.svg" alt="" /></a>
     <nav class="navbar">
-      
       <div class="btn">
         <i class="fa fa-times close-btn"></i>
       </div>
       <ul class="navbar-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Men</a>
+        <li><a href="index.html" class="actives">Home</a></li>
+        <li>
+          <a href="men.html">Men</a>
 
           <ul class="drop-down">
-            <li><a href="#">Test</a></li>
-            <li><a href="#">Test</a></li>
-            <li><a href="#">Test</a></li>
-            <li><a href="#">Test</a></li>
+            <li><a href="#">Ready-to-Wear</a></li>
+            <li><a href="#">Wallets</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Belts</a></li>
+            <li><a href="#">Eye-Wear</a></li>
+            <li><a href="#">Watches</a></li>
           </ul>
         </li>
 
-        <li><a href="#">Kids</a>
+        <li>
+          <a href="women.html">Women</a>
           <ul class="drop-down">
-            <li><a href="#">Test</a></li>
-            <li><a href="#">Test</a></li>
-            <li><a href="#">Test</a></li>
-            <li><a href="#">Test</a></li>
+            <li><a href="#">Ready-to-Wear</a></li>
+            <li><a href="#">Handbags</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Jewellery</a></li>
+            <li><a href="#">Eye-Wear</a></li>
+            <li><a href="#">Watches</a></li>
           </ul>
         </li>
-        <li><a href="women.html">Women</a>
+
+        <li>
+          <a href="#">Kids</a>
           <ul class="drop-down">
-            <li><a href="#">Test</a></li>
-            <li><a href="#">Test</a></li>
-            <li><a href="#">Test</a></li>
-            <li><a href="#">Test</a></li>
+            <li><a href="#">Boys</a></li>
+            <li><a href="#">Girls</a></li>
           </ul>
         </li>
       </ul>
@@ -57,48 +85,23 @@
         <i class="fa fa-bars menu-btn"></i>
       </div>
       <a href="#" class="fas fa-shopping-cart"></a>
-      <a href="#" class="fas fa-user-circle"></a>
       <label for="search-box" class="fas fa-search srch-btn"></label>
-
     </div>
-    <!-- <form action="" class="search-box-container">
-      <input type="search" id="search-box" placeholder="search here...">
-      <input type="button" value="Go">
-  </form> -->
-
-  <form action="get" class="search-box-container" id="search-box-container" autocomplete="off">
-    <input type="text" id="search" placeholder="What Are You Looking For?">
-    <input type="button" value="GO" id="go-btn" class="go-btn">
-  </form>
-
+    <form
+      action="get"
+      class="search-box-container"
+      id="search-box-container"
+      autocomplete="off"
+    >
+      <input type="text" id="search" placeholder="What Are You Looking For?" />
+      <input type="button" value="GO" id="go-btn" class="go-btn" />
+    </form>
   </header>
 
-  
-  <!-- <section class="first-container" id="first-container">
-    <div class="container">
-      <div class="first-container-content">
-        <div class="sub-heading">
-          <h2>Ouverture</h2>
-        </div>
-
-        <div class="heading">
-          <h2>Towards The sun</h2>
-        </div>
-
-          <div class="shop">
-
-            <a href="https://www.google.com/">Shop handbags</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section> -->
-
+  <!-- conatiner 1 -->
   <section class="first-container" id="first-container">
     <div class="container">
       <div class="first-container-content">
-        
         <div class="sub-heading">
           <h2>Ouverture</h2>
         </div>
@@ -106,29 +109,32 @@
           <h2>Towards The sun</h2>
         </div>
         <div class="shop">
-          <a href="https://www.google.com.pk">Shop For Men</a>
-          <a href="https://www.google.com.pk">Shop For Women</a>
+          <a href="men.html">Shop For Men</a>
+          <a href="women.html">Shop For Women</a>
         </div>
-
       </div>
     </div>
   </section>
- 
+
+<!-- container 2 -->
   <section class="handbag" id="handbag">
     <div class="container">
       <div class="handbag-content">
-
-        <img src="assets/images/bags/11.png" alt="handbag" data-aos="fade-up" data-aos-delay="1000">
+        <img
+          src="assets/images/bags/11.png"
+          alt="handbag"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        />
 
         <div class="heading" data-aos="fade-right" data-aos-delay="1000">
           <div class="sub-heading">
-          <h2>Ouverture</h2>
-        </div>
+            <h2>Ouverture</h2>
+          </div>
 
-        <div class="main-heading" data-aos="fade-right">
-          <h2>Zara's Horsebit 1955 Leather Bag</h2>
-        </div>
-
+          <div class="main-heading" data-aos="fade-right">
+            <h2>Zara's Horsebit 1955 Leather Bag</h2>
+          </div>
         </div>
         <div class="shop" data-aos="fade-right">
           <a href="https://www.google.com/">Shop handbags</a>
@@ -137,44 +143,45 @@
     </div>
   </section>
 
+  <!-- container 3 -->
   <section class="rtwear">
-    <div class="container">
-    </div>
+    <div class="container"></div>
   </section>
 
   <section class="rtwear2" id="rtwear2">
     <div class="container">
       <div class="rtwear-content">
         <div class="heading">
-
-        <div class="main-heading">
-          <h2>Ouverture</h2>
-        </div>
-
+          <div class="main-heading">
+            <h2>Ouverture</h2>
+          </div>
         </div>
         <div class="shop">
           <a href="#">Shop Ready-to-wear</a>
         </div>
-
       </div>
     </div>
   </section>
 
+  <!-- container 4 -->
   <section class="shoes" id="shoes">
     <div class="container">
       <div class="shoes-content">
-
-        <img src="assets/images/shoes/formal shoes or loafer/3.png" alt="shoes" data-aos="fade-up" data-aos-delay="1000">
+        <img
+          src="assets/images/shoes/formal shoes or loafer/3.png"
+          alt="shoes"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        />
 
         <div class="heading" data-aos="fade-right" data-aos-delay="1000">
           <div class="sub-heading">
-          <h2>Ouverture</h2>
-        </div>
+            <h2>Ouverture</h2>
+          </div>
 
-        <div class="main-heading" data-aos="fade-right" data-aos-delay="1000">
-          <h2>Men's banker's shoes</h2>
-        </div>
-
+          <div class="main-heading" data-aos="fade-right" data-aos-delay="1000">
+            <h2>Men's banker's shoes</h2>
+          </div>
         </div>
         <div class="shop" data-aos="fade-right" data-aos-delay="1000">
           <a href="#">Shop shoes</a>
@@ -183,33 +190,21 @@
     </div>
   </section>
 
-
+  <!-- footer -->
   <section class="footer" id="footer">
     <div class="container">
       <div class="footer-content">
-
-        <div class="footer-box">
-          <a href="#" class="logo">Zara's</a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eveniet.</p>
-          <div class="share">
-            <a href="#" class="btn fab fa-facebook-f"></a>
-            <a href="#" class="btn fab fa-twitter"></a>
-            <a href="#" class="btn fab fa-instagram"></a>
-            <a href="#" class="btn fab fa-snapchat"></a>
-          </div>
-        </div>
-        
         <div class="footer-box">
           <div class="footer-heading">
             <h2>Location</h2>
           </div>
           <div class="footer-links">
-            <a href="#">pakistan</a>
-            <a href="#">USA</a>
-            <a href="#">france</a>
-            <a href="#">japan</a>
-            <a href="#">russia</a>
-        </div>
+            <a href="dead.html">pakistan</a>
+            <a href="dead.html">USA</a>
+            <a href="dead.html">france</a>
+            <a href="dead.html">japan</a>
+            <a href="dead.html">russia</a>
+          </div>
         </div>
 
         <div class="footer-box">
@@ -217,11 +212,11 @@
             <h2>Quick-links</h2>
           </div>
           <div class="footer-links">
-            <a href="#">home</a>
-            <a href="#">Mens</a>
-            <a href="#">Women</a>
-            <a href="#">Kids</a>
-        </div>
+            <a href="index.html">home</a>
+            <a href="men.html">Mens</a>
+            <a href="kids.html">Kids</a>
+            <a href="women.html">Women</a>
+          </div>
         </div>
 
         <div class="footer-box">
@@ -229,20 +224,64 @@
             <h2>Download Apps</h2>
           </div>
           <div class="footer-links">
-            <a href="#">google play</a>
-            <a href="#">window xp</a>
-            <a href="#">app store</a>
+            <a href="dead.html">google play</a>
+            <a href="dead.html">window xp</a>
+            <a href="dead.html">app store</a>
+          </div>
         </div>
+
+        <div class="footer-box">
+          <div class="footer-heading">
+            <h2>Our Comapany</h2>
+          </div>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="dead.html">Careers</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <div class="footer-heading">
+            <h2>Customer Support</h2>
+          </div>
+          <div class="footer-links">
+            <a href="dead.html">Custom Services</a>
+            <a href="dead.html">Give Feedback</a>
+            <a href="dead.html">store locator</a>
+            <a href="dead.html">Disclaimer</a>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <div class="footer-heading">
+            <h2>Follow Us</h2>
+          </div>
+          <div class="social">
+            <img src="assets/images/facebook.svg" alt="">
+            <img src="assets/images/insta_20x20.png" alt="">
+            <img src="assets/images/youtube_1.png" alt="">
+          </div>
+         <div class="banks">
+          <div class="footer-heading">
+            <h2>We Accept</h2>
+          </div>
+           <img src="assets/images/payment2_1.png" alt="">
+         </div>
         </div>
 
       </div>
     </div>
   </section>
-  <div class="end">
-    Created and Designed By M.Mohid
-  </div>
-
+  
+  <div class="end">Created and Designed By M.Mohid</div>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
 </body>
 <script src="assets/scripts/index.js"></script>
+<script>
+  function PopUp(){
+    document.getElementById('popup').style.display="none"; 
+}
+</script>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    #popup img {
+      width: 10em;
+      
+    }
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .window {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      border: 2px solid springgreen;
+    }
+    .right-pop p{
+      margin: 0 20px;
+    }
+    #popup {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+
+    @media only screen and (max-width: 900px) {
+      #popup img {
+        width: 5em;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .window {
+        width: 80%;
+      }
+    }
+  </style>
+
+  <body>
+    <div id="popup">
+
+      <div class="window">
+        <div class="top">
+          <div class="left-pop">
+            <img src="assets/images/logo.svg" alt="">
+          </div>
+          <div class="right-pop">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore asperiores voluptate mollitia. Suscipit, aliquam dignissimos.</p>
+          </div>
+        </div>      
+  
+        <div class="bottom">
+          <input type="button" value="Agree" onclick="PopUp()">
+          <input type="button" value="Close" onclick="PopUp()">
+        </div>
+      </div>
+
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  </body>
+
+  <script>
+    function PopUp(){
+    document.getElementById('popup').style.display="none"; 
+}
+  </script>
+</html>
